@@ -1,0 +1,353 @@
+
+/*
+   Code Attribution
+   R. Moodley, Varsity College Durban North Module Manual 2024
+   E. Adam, Varsity College Durban North 2024
+   HTML and CSS For Absolute Beginners | 2024 Crash Course
+   https://youtu.be/MBlkKE0GYGg
+
+   Additional customizations and enhancements based on user's request:
+   - Cream background and black paragraph text.
+   - Fixed footer.
+   - Borders and hover effects for images.
+   - Background styling for headings (h1).
+   - Enhanced navigation styling.
+*/
+body {
+    background-color: #FFFDD0; /* Cream background */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black; /* Black text for paragraphs */
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Avocado green */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #045c09; 
+    color: white; /* White text */
+    padding: 10px; /* Padding around text */
+    margin: 0;
+    text-align: center; /* Centered text */
+    font-size: 2em; 
+}
+
+/* Logo */
+.logo img {
+    height: 150px;
+    transition: transform 0.3s;
+}
+
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #2E7D32;
+}
+
+nav li {
+    margin: 0 15px
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: bold; 
+}
+
+nav li a:hover {
+    background-color: #45a049;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2E7D32; 
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #388E3C; 
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed; /* Fixed footer */
+    bottom: 0;
+    width: 10%;
+    z-index: 1000;
+}
+
+footer a img {
+    height: 30px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+footer a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+/* Styling images */
+img {
+    height: 300px; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    transition: transform 0.3s;
+}
+
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.05); 
+}
+
+/* About us and news section styles */
+.about-us, .news-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Add a class for item containers */
+.item-container {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; 
+    color: white;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Hover effect for the footer */
+footer:hover {
+    
+    color: #f8fdfd; 
+}
+
+footer a img {
+    height: 50px;
+    width: 30px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+footer a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+/* Product grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements */
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center form */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Larger text for better readability */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+/* Ensure this CSS is in your styles.css */
+.contact-container {
+    display: flex;
+    gap: 20px; /* Optional: adds space between form and map */
+    align-items: flex-start; /* Align items at the top */
+}
+
+#contactForm {
+    flex: 1;
+    max-width: 400px; /* Optional: sets max width for form */
+}
+
+iframe {
+    flex: 1;
+    max-width: 600px; /* Optional: sets max width for map */
+    height: 450px; /* Matches your iframe height */
+    border: none;
+}
+/* Style for the full-screen background video */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Prevents video from being clicked */
+}
+
+/* Style for the foreground content */
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 960px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        flex: 1 1 100%;
+    }
+}

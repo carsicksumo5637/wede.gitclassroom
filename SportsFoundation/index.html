@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Play It Forward Sports Foundation</title>
+    <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        color: white; /* Set default text color to white */
+        font-family: Arial, sans-serif; /* Add a default font */
+    }
+    body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white; /* Set default text color to white */
+        }
+
+    .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    header {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Add a dark overlay to enhance text visibility */
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    nav ul li a {
+        color: white; /* Set nav links to white */
+        text-decoration: none;
+    }
+
+    main {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+    }
+
+    footer {
+        position: relative;
+        z-index: 1;
+        padding: 10px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5); /* Dark background for footer */
+    }
+</style>
+</head>
+<body>
+    <div class header="header"> 
+        <div class="logo"style="float: left; margin:10px"> 
+            <img src="_images/logo.png"   alt="logo" height="100px">
+        </div>
+      <!-- Code Attribution
+         R. Moodley, Varsity College Durban North Module Manual 2024
+    -->
+          <!-- Video Background Container -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="_videos/sportsforall.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </div class=subheading>
+          <h1>Play It Forward</h1>
+          <h3> Empowering Young Athletes, Inspiring Future Champions.</h3>
+            <br>
+    <div>
+        
+        <div class="main">
+            <p>At Play It Forward Foundation, we are dedicated to empowering the next generation of South African athletes. Our mission is to provide sports scholarships and development programs for both abled and disabled children, nurturing their potential and helping them become future champions. With a focus on inclusivity and excellence, we aim to raise the flag of South Africa high in the world of sports. Join us in making a difference through sports and fostering a new era of athletic talent.</p> 
+            <br> 
+            <div class="content-item"> 
+            <img src="_images/home.jpeg" height=" 300px" alt="running track, young athlethes racing using their equipment"  class="hover-effect" onclick="showLightbox(this.src)" style="cursor:pointer;"></div>
+            <br>
+            <br>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5SvmfSgc9L7Sc4Uj2LnogBIKbICxPJppwehRcwGzmW-8f4A/viewform?embedded=true" width="650" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+
+
+       
+           
+                <div class="footer">
+                    <p>&copy; 2024 - Play It Forward Sports Foundation-All rights reserved- South Africa 
+                        <br> 
+                        <a href="https://www.instagram.com/nathintuli" target="_blank">
+                            <img src="_images/insta.jpg" class="social-icon" height="50px" alt="insta logo">
+                           
+                        </a>
+                        <a href="mailto:nathintuli31@gmail.com">
+                            <img src="_images/gmail.jpg" height= "50px" alt="gmail logo">
+                        </a>  
+                    </p>
+                </div>
+                <br>  
+               
+            </p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Contact us</title>
+</head>
+<body>
+    <div class header="header"> 
+        <div class="logo"style="float: left; margin:10px"> 
+            <img src="_images/logo.png"   alt="logo" height="100px">
+        </div>
+     <!-- Code Attribution
+         R. Moodley, Varsity College Durban North Module Manual 2024
+    -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </nav>
+    </div class=subheading>
+          <h1>Play It Forward</h1>
+          <h3> Empowering Young Athletes, Inspiring Future Champions.</h3>
+            <br>
+    <div>
+        <div> 
+       
+            
+
+      <!-- 
+    Form Validation and Success Message Script
+    Author: ChatGPT (OpenAI)
+    Purpose: This code validates the email input for correct format and displays an error message if the email is incorrect.
+             Upon successful form submission, it displays a thank you message and resets the form fields.
+
+    Attribution: This code was created by ChatGPT, an AI developed by OpenAI, in response to user requirements for a form validation and success message feature.
+    License: MIT License (Feel free to modify and use as needed)
+-->
+
+<div class=" contact-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.7930632124685!2d31.036413929082332!3d-29.783624677362777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef706574eaf2ed5%3A0x90d85a5467d4bdeb!2s21%20Ennisdale%20Dr%2C%20Durban%20North%2C%204051!5e0!3m2!1sen!2sza!4v1724064199413!5m2!1sen!2sza" width="640" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    
+                        <label for="message">Message:</label>
+                        <textarea id="message" required></textarea>
+                    
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+                    <p id="formMessage"></p>
+                    
+                    <script>
+                        document.getElementById("contactForm").addEventListener("submit", function(event) {
+                            event.preventDefault();
+                    
+                            const email = document.getElementById("email").value;
+                            const formMessage = document.getElementById("formMessage");
+                            
+                            // Basic email validation
+                            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailPattern.test(email)) {
+                                formMessage.textContent = "Please enter a valid email address.";
+                                formMessage.style.color = "red";
+                                return;
+                            }
+                    
+                            // Success message after correct form submission
+                            formMessage.textContent = "Thank you for filling out the form!";
+                            formMessage.style.color = "black";
+                            
+                            // Reset the form
+                            document.getElementById("contactForm").reset();
+                        });
+                    </script>
+                    
+                    <br>
+
+                    <p>Contact Information for Play It Forward Foundation:
+                        <br>
+                        Phone::  +27(0)76 374 5610
+                        <br> 
+                        Email for General Inquiries: : info@playforwardfoundation.co.za
+            
+                        <br> 
+                        Fax: +27 17 685 982
+                        <br>
+                </div>
+           
+                </p>
+            
+                <div class="footer">
+                    <p>&copy; 2024 - Play It Forward Sports Foundation-All rights reserved- South Africa 
+                        <br> 
+                        <a href="https://www.instagram.com/nathintuli" target="_blank">
+                            <img src="_images/insta.jpg" class="social-icon" height="50px" alt="insta logo">
+                           
+                        </a>
+                        <a href="mailto:nathintuli31@gmail.com">
+                            <img src="_images/gmail.jpg" height= "50px" alt="gmail logo">
+                        </a>  
+                    </p>
+                </div>
+</body>
+</html>
